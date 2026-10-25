@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="4dp">
+
+        <TextView
+            android:id="@+id/tab_follows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_marginEnd="10dp"
+            android:focusable="true"
+            android:background="@drawable/tab_bg"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:text="Подписки"/>
+
+        <TextView
+            android:id="@+id/tab_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_marginEnd="10dp"
+            android:focusable="true"
+            android:background="@drawable/tab_bg"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:text="Топ"/>
+
+        <TextView
+            android:id="@+id/tab_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:focusable="true"
+            android:background="@drawable/tab_bg"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:text="Поиск"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp"
+            android:clipToPadding="false"/>
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/text_secondary"
+            android:textSize="20sp"/>
+    </FrameLayout>
+</LinearLayout>

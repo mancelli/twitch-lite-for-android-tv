@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TwitchTV Lite</string>
+    <string name="loading">Загрузка стримов…</string>
+    <string name="error_generic">Ошибка сети. Нажмите ОК для повтора.</string>
+</resources>
